@@ -1,11 +1,35 @@
-body {
-    background-color: #fafafa;
+.introduce {
+  width: 100%;
+  padding: 20px;
+  padding-top: 40px;
 }
 
-.container {
-    font-size: 20px;
-    color: transparent;
-    background-color: #fff;
-    background-image: linear-gradient(to bottom right, #434343 0%, #000000 100%);
-    -webkit-background-clip: text;
+.photo-self {
+  padding: 30px;
+  width: 100%;
+
+}
+
+.photo-self img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 15%;
+  overflow: hidden;
+}
+
+.desc {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.desc .profession {
+  color: #777777;
+}
+
+.desc .fs-1 {
+  font-size: 80px;
 }
