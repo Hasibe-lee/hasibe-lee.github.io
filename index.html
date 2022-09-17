@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg ">
+  <nav class="navbar navbar-expand-lg fixed-top" id="content">
     <div class="container">
       <a class="navbar-brand" href="javascript:;">Hasibe-lee</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
@@ -19,15 +19,18 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse text-center" id="navbar">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav navbar-nav-scroll me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="javascript:;">关于</a>
+            <a class="nav-link active" href="#">顶部</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="javascript:;">个人技能</a>
+            <a class="nav-link active" href="#about">关于</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="javascript:;">联系</a>
+            <a class="nav-link" href="#self-skill">个人技能</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contract">联系</a>
           </li>
         </ul>
       </div>
@@ -39,7 +42,7 @@
       <div class="row">
         <div class="col-lg-5 col-md-5 col-sm-5 col-xl-5">
           <div class="photo-self">
-            <img src="./img/广科5.10.jpg" alt="">
+            <img src="./img/李鸿鑫.jpg" alt="">
           </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-6 col-xl-6">
@@ -53,9 +56,41 @@
               <p class="fs-4 fw-bold profession">前端开发者</p>
             </div>
             <div class="row">
-              <p class="fs-6 fw-light profession">能开发出符合你需求的网站,并且让你眼前一亮</p>
+              <p class="fs-6 fw-light profession">能开发出符合你需求的网站,且不容易出现bug</p>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="floor">
+    <div data-bs-spy="scroll" data-bs-target="#content">
+      <div class="container">
+        <!-- 基本资料 -->
+        <div class="row">
+          <div class="row">
+            <h4 class="text-center" id="about">关于</h4>
+          </div>
+          <div class="row">
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xl-5">
+              <div class="photo-self">
+                <img class="oneself" src="./img/lhx.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <a href="./李鸿鑫-前端开发工程师(实习).pdf" download="李鸿鑫-前端开发工程师(实习).pdf">下载简历</a>
+            </div>
+          </div>
+        </div>
+        <!-- 技能 -->
+        <div class="row">
+          <h4 class="text-center" id="self-skill">个人技能</h4>
+        </div>
+
+        <!-- 联系 -->
+        <div class="row">
+          <h4 class="text-center" id="contract">联系</h4>
         </div>
       </div>
     </div>

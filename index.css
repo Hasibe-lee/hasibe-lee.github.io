@@ -1,3 +1,21 @@
+body {
+  height: 2000px;
+}
+
+:root {
+  --box-shadow: 0px 0px 20px rgb(0 0 0 /10%);
+}
+
+.navbar.sticky {
+  background: rgba(224, 223, 223, 0.1);
+  box-shadow: var(--box-shadow);
+}
+
+.navbar {
+  /* background-color: rgba(0, 0, 0, .1); */
+  backdrop-filter: blur(10px);
+}
+
 .introduce {
   width: 100%;
   padding: 20px;
@@ -32,4 +50,48 @@
 
 .desc .fs-1 {
   font-size: 80px;
+}
+
+.floor {
+  perspective: 800px;
+  margin-top: 150px;
+}
+
+@media screen and (max-width:992px) {
+  .floor {
+    perspective: 500px;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .floor {
+    perspective: 500px;
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .floor {
+    perspective: 500px;
+    margin-top: 110px;
+  }
+}
+
+.floor .photo-self {
+  transform-style: preserve-3d;
+}
+
+.floor .photo-self .oneself {
+  animation: none;
+}
+
+@keyframes rotateImg {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotateY(180deg);
+  }
 }
